@@ -1,0 +1,15 @@
+.main{
+    padding: 0.5rem;
+    border: 2px solid orange;
+    min-height: 15rem;
+}
+
+.search{
+
+}
+
+.input{
+    border: none;
+    outline: none;
+    padding-left:4px;
+}
