@@ -29,4 +29,5 @@ class App extends React.Component{
     }
 }
 
-render(<App/>,document.getElementById('app'))
+let pwd = prompt('该行为不被提倡，如果需要，请获得作者允许！')
+if(pwd=='cyf') render(<App/>,document.getElementById('app'))
