@@ -4,6 +4,16 @@
     min-height: 15rem;
 }
 
+.delete{
+    position: absolute;
+    right:2rem;
+    cursor: pointer;
+}
+
+.delete:hover{
+    color: indianred;
+}
+
 .search{
 
 }

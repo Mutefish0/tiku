@@ -19796,6 +19796,7 @@
 	                    { className: _SearchPannel2.default.search },
 	                    _react2.default.createElement('i', { className: 'fa fa-search' }),
 	                    _react2.default.createElement('input', {
+	                        ref: 'inp',
 	                        className: _SearchPannel2.default.input,
 	                        onChange: function onChange(e) {
 	                            var input = e.target.value;
@@ -19807,7 +19808,11 @@
 	                                );
 	                            });
 	                            _this2.setState({ output: out });
-	                        }, type: 'text' })
+	                        }, type: 'text' }),
+	                    _react2.default.createElement('i', { className: 'fa fa-close ' + _SearchPannel2.default.delete, onClick: function onClick() {
+	                            _this2.refs.inp.value = '';
+	                            _this2.setState({ output: null });
+	                        } })
 	                ),
 	                _react2.default.createElement(
 	                    'ul',
@@ -19914,11 +19919,12 @@
 
 
 	// module
-	exports.push([module.id, ".riddleoo__local___1LUMP{\r\n    padding: 0.5rem;\r\n    border: 2px solid orange;\r\n    min-height: 15rem;\r\n}\r\n\r\n.riddleoo__local___2vowK{\r\n\r\n}\r\n\r\n.riddleoo__local___3iKxy{\r\n    border: none;\r\n    outline: none;\r\n    padding-left:4px;\r\n}", ""]);
+	exports.push([module.id, ".riddleoo__local___1LUMP{\r\n    padding: 0.5rem;\r\n    border: 2px solid orange;\r\n    min-height: 15rem;\r\n}\r\n\r\n.riddleoo__local___JatHf{\r\n    position: absolute;\r\n    right:2rem;\r\n    cursor: pointer;\r\n}\r\n\r\n.riddleoo__local___JatHf:hover{\r\n    color: indianred;\r\n}\r\n\r\n.riddleoo__local___2vowK{\r\n\r\n}\r\n\r\n.riddleoo__local___3iKxy{\r\n    border: none;\r\n    outline: none;\r\n    padding-left:4px;\r\n}", ""]);
 
 	// exports
 	exports.locals = {
 		"main": "riddleoo__local___1LUMP",
+		"delete": "riddleoo__local___JatHf",
 		"search": "riddleoo__local___2vowK",
 		"input": "riddleoo__local___3iKxy"
 	};

@@ -16,6 +16,7 @@ class SearchPannel extends React.Component{
                 <div className={s.search}>
                     <i className="fa fa-search"/>
                     <input
+                        ref="inp"
                         className={s.input}
                         onChange={(e)=>{
                         let input = e.target.value
@@ -25,6 +26,10 @@ class SearchPannel extends React.Component{
                     })
                     this.setState({output:out})
                 }} type="text"/>
+                    <i className={`fa fa-close ${s.delete}`} onClick={()=>{
+                        this.refs.inp.value=''
+                        this.setState({output:null})
+                    }}/>
                 </div>
                 <ul>{this.state.output}</ul>
             </div>
