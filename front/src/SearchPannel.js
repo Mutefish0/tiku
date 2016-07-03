@@ -26,9 +26,10 @@ class SearchPannel extends React.Component{
                     })
                     this.setState({output:out})
                 }} type="text"/>
-                    <i className={`fa fa-close ${s.delete}`} onClick={()=>{
+                    <i className={`fa fa-close ${s.delete}`} onClick={(e)=>{
                         this.refs.inp.value=''
                         this.setState({output:null})
+                        this.refs.inp.focus()
                     }}/>
                 </div>
                 <ul>{this.state.output}</ul>

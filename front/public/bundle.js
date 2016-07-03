@@ -19809,9 +19809,10 @@
 	                            });
 	                            _this2.setState({ output: out });
 	                        }, type: 'text' }),
-	                    _react2.default.createElement('i', { className: 'fa fa-close ' + _SearchPannel2.default.delete, onClick: function onClick() {
+	                    _react2.default.createElement('i', { className: 'fa fa-close ' + _SearchPannel2.default.delete, onClick: function onClick(e) {
 	                            _this2.refs.inp.value = '';
 	                            _this2.setState({ output: null });
+	                            _this2.refs.inp.focus();
 	                        } })
 	                ),
 	                _react2.default.createElement(
